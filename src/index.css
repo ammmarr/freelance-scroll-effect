@@ -25,7 +25,9 @@ h1 {
   height: 80vh;
   background-color: rgba(98, 96, 96, 0.686);
   border-radius: 1rem;
+  -webkit-background-attachment: fixed;
   background-attachment: fixed;
+  -webkit-background-size: cover;
   background-size: cover;
   cursor: pointer;
   position: relative;
