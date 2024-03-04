@@ -1,0 +1,67 @@
+*,
+html {
+  margin: 0;
+  padding: auto;
+  box-sizing: border-box;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  min-height: 200vh;
+  background-color: #111111;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5vh 2%;
+}
+h1 {
+  text-align: center;
+}
+.project-card {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(255, 0, 0, 0.348);
+  border-radius: 1rem;
+  background-attachment: fixed;
+  background-size: cover;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.project-card .text-details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.695));
+  display: flex;
+  align-items: end;
+  padding: 2%;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(50%);
+  opacity: 0;
+}
+.project-card:hover .text-details {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+/* The whole functionality of the scroll animation is on the property which is in line 28 */
+/* it basically attaches the background images as if it is fixed to the screen  */
+/* you can adjust its initial position with multiple properties like background-size */
+
+/* note: the same functionality could be implemented manually by creating a parent container and a child with position set to relative */
+/* then setting the parent to over flow hidden. this would do the same but it is now much cleaner */
+
+/*Regarding the hover animation (You can skip that part)  */
+/* making this animation would be much hard using javascript event listeners */
+/* I have created a child element that transforms and moves when the parent element is hover */
+/* most importantly an overflow hidden is put so that when the child overflow the parent it is not shown */
+/* try removing line 32 */
+
+/* please, reach out whenever you have any question! */
+/* It was a pleasure */
